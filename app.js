@@ -13,6 +13,9 @@
  * Thanks !
  * 
  */
+//All of the variables you can edit :
+
+var server_port = 80;
 
 //All of the needed requirements.
 var app = require('connect')();
@@ -21,8 +24,8 @@ var os = require('os');
 var server = require('http').createServer(app) 
 var io = require('socket.io').listen(server);
 
-//Make server listen on port 80
-server.listen(80);
+//Make server listen on your chosen port.
+server.listen(server_port);
 
 //This is the part where the code handles the web requests.
 app.use('/', function (request, response) {
