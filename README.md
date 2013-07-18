@@ -13,10 +13,9 @@ ___
 
 Screenshots :
 -------------
-![alt text][logo]
 
-[logo]: http://i.imgur.com/TeyMIRJ.png "The UI front-end."
-[logo]: http://i.imgur.com/CNNpubV.png "Highcharts is used to make charts."
+![alt text](http://i.imgur.com/TeyMIRJ.png "The UI front-end.")
+![alt text](http://i.imgur.com/CNNpubV.png "Highcharts is used to make charts.")
 
 
 ___
