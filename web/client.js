@@ -16,11 +16,11 @@
 
 //Change this variable to your server address.
 
-var server_location = 'http://192.168.0.100';
+var server_location = 'http://localhost';
 
 //Change this variable to your desired interval to check. (in milliseconds)
 
-var check_interval = 5000;
+var refresh_interval = 5000;
 	
 //Make a new socket that connects to the server socket.
 var socket = io.connect(server_location);
@@ -50,7 +50,7 @@ setInterval(function () {
 setInterval(function () {
 	console.log("Made a request to the server");
 	socket.emit('request', {type:'graph'});
-}, check_interval);
+}, refresh_interval);
 
 //The init of the socket connection with the server.
 socket.on('connect', function () { 	
