@@ -1,30 +1,71 @@
 Raspberry Stats
 ===============
 
-This is a simple a project that I made using NodeJS, Socket.io and Highcharts.
+Hello there!
 
-!!DISCLAIMER!! 
+Have you ever wondered how your Pi is doing?
+What if you had a smart and super-awesome way to find out using nothing more than **NodeJS** and your web browser.
+It makes use of hosting the User Interface with NodeJS and the streaming of data with Socket.io so that the stats you're seeing are realtime.
 
-Hey there! Thanks for reading/using/editing this code, I just wanted to say a couple of things :
 
-First of all this code isn't at it's best because I did a rather bad job at using some of the API's possibilities.
+___
 
-Second of all, I'm a fifteen year developer at the making of this code so I'm not so experienced in a general sense.
 
- 
-If you make any improvements to the code, email me your forked github repository of this code and I'll take a look at it just to learn :)
+Screenshots :
+-------------
 
- 
-You can also email me at : 96aa48 [at] gmail.com
+[logo]: http://i.imgur.com/TeyMIRJ.png "The UI front-end."
+[logo]: http://i.imgur.com/CNNpubV.png "Highcharts is used to make charts."
 
- 
-Thanks !
+
+___
+
 
 Dependencies :
-==============
+--------------
 
 The code depends on the following : Socket.io and Connect (Node).
 You can install them using NPM with the following commands :
 
-	npm install socket.io
-	npm install connect
+	npm install connect socket.io
+
+
+___
+
+How to install :
+----------------
+
+You can install the program using the following method in a(n) (SSH) terminal :
+
+	#install all of the programs needed to run this.
+	sudo apt-get install nodejs npm git
+	
+	#Clone this repository.
+	git clone https://github.com/96AA48/raspberry-stats.git
+	
+	#Go inside the folder
+	cd raspberry-stats
+	
+	#Install the needed NodeJS modules.
+	npm install socket.io connect
+	
+	#Run the program
+	sudo nodejs app.js
+
+___
+
+
+Disclaimer
+----------
+
+Hey there! Thanks for reading/using/editing this code, I just wanted to say a couple of things :
+
+The code was made with the use of nothing more than the knowledge that I have of Javascript and NodeJS.
+This means that I can't guarantee that the code is efficiënt, accurate and/or creates reliable information.
+
+If there is any trouble setting this up, make an issue on this Github/Gitblit page and I'll help you as soon as I can.
+
+You can also email me at : **96aa48 [at] gmail.com**
+
+ 
+Thanks !
