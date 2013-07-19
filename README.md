@@ -52,6 +52,8 @@ You can install the program using the following method in a(n) (SSH) terminal :
 	#Run the program
 	sudo nodejs app.js
 
+Make sure that when you're done that you edit some of the variables in app.js and client.js, these are just tiny things like server port and server location.
+
 ___
 
 
