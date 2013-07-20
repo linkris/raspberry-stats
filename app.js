@@ -22,7 +22,7 @@ var app = require('connect')();
 var fs = require('fs');
 var os = require('os');
 var server = require('http').createServer(app) 
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(server , {log : false});
 
 //Make server listen on your chosen port.
 server.listen(server_port);
