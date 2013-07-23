@@ -36,7 +36,7 @@ app.use('/', function (request, response) {
 	 */
 	
 	if (request.url == '/favicon.ico' || request.url == '/pi.png') {
-		fs.readFile('web/pi.png', function (err, data) {
+		fs.readFile(__dirname + '/web/pi.png', function (err, data) {
 			if (err) throw err;
 			response.setHeader('Content-Type', 'image/png');
 			response.end(data);
@@ -44,21 +44,21 @@ app.use('/', function (request, response) {
 		return
 	}
 	else if (request.url == '/style.css') {
-		fs.readFile('web/style.css', function (err, data) {
+		fs.readFile(__dirname + '/web/style.css', function (err, data) {
 			if (err) throw err;
 			response.setHeader('Content-Type', 'text/css');
 			response.end(data + '');
 		});
 	}
 	else if (request.url == '/client.js') {
-		fs.readFile('web/client.js', function (err, data) {
+		fs.readFile(__dirname + '/web/client.js', function (err, data) {
 			response.setHeader('Content-Type', 'text/javascript');
 			response.end(data + '');
 		});
 	}
 	else {
 		//If the request doesn't match the above requests, serve the app.html.
-		fs.readFile('web/app.html', function (err, data) {
+		fs.readFile(__dirname + '/web/app.html', function (err, data) {
 			if (err) throw err;
 			response.end(data + '');
 		});
